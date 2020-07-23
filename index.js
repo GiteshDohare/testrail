@@ -136,7 +136,7 @@ class Reporter {
   }
 
   getId(context) {
-    const testRailRegExp = RegExp(/TestRail\(\d{1,}\)/g);
+    const testRailRegExp = RegExp(/TestRail\[\d{1,}\]/g);
     const matches = context.match(testRailRegExp);
     if (!matches || matches.length && matches.length > 1) {
       return null;
