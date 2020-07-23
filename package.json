@@ -1,6 +1,6 @@
 {
-  "name": "@rankery/jest-2-testrail",
-  "version": "0.0.4",
+  "name": "@jest-reporters/testrail",
+  "version": "1.0.0",
   "description": "Jest based reporter for creating a new run and sending test results to TestRail",
   "main": "index.js",
   "scripts": {
