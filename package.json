@@ -1,5 +1,5 @@
 {
-  "name": "@jest-reporters/testrail",
+  "name": "@giteshdohare/testrail",
   "version": "1.0.1",
   "description": "Jest based reporter for creating a new run and sending test results to TestRail",
   "main": "index.js",
