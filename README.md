@@ -12,19 +12,18 @@ It can automatically create a new test runs on TestRail for multiple suites and 
 ## Install
 
 ```code
-npm i @jest-reporters/testrail
+npm i @giteshdohare/testrail-jest-reporter
 ```
 
 ## Example - **jest-config.js**
 
 The Reporter must be specified in the Jest config file (jest-config.js), under 'reporters'.
-<br>Parameter is defined as 'project_id', which is the id of your project on TestRail.
 
 ```javascript
 module.exports = {
   ...
   reporters: [
-    ["testrail", { project_id: "1" }]
+    ["@giteshdohare/testrail-jest-reporter"]
   ]
 };
 ```
@@ -60,13 +59,18 @@ describe("TestRail[1] Suite", () => {
 
 ## ENV requirements 
 
-Project needs 3 parameters to work correctly with testrail
+Project needs 4 parameters to work correctly with testrail
 
 ```javascript
 TESTRAIL_URL = https://<YourProjectURL>.testrail.io
 TESTRAIL_USERNAME = email address
 TESTRAIL_PASSWORD = password or API key
+TESTRAIL_PROJECT_ID = 1
 ```
+## Credit
+Forked from: https://github.com/jest-reporters/testrail
+<br/>
+Orginal Author: [@rankery](https://github.com/rankery)
 
 ## License
 
